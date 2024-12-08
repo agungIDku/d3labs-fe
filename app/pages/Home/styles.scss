@@ -1,0 +1,80 @@
+#home-page {
+    padding: 16px;
+    form {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+
+        .form-input {
+            flex: 1;
+            
+            input {
+                padding: 10px 12px;
+                border-radius: 8px;
+                border: 2px solid #ffffff;
+                width: 100%;
+            }
+        }
+        button {
+            width: 100px;
+            border-radius: 8px;
+            border: 2px solid #ffffff;
+            background-color: #313131;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+#repos {
+    margin-top: 16px;
+
+    .repos-list {
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+
+        .repo-item {
+            border: 1px solid #313131;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            .header {
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                
+                h3 {
+                    margin-bottom: 8px;
+                }
+            }
+
+            .readme {
+                margin-top: 12px;
+
+                pre {
+                    overflow-x: auto;
+                    white-space: pre;
+                    background-color: #6d6a6a;
+                    padding: 8px;
+                    border-radius: 8px;
+                }
+            }
+           
+           
+
+            &:hover {
+                border: 1px solid #ffffff;
+            }
+        }
+    }
+}
+
+
+.text-center {
+    text-align: center
+}
